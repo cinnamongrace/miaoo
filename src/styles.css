@@ -1,0 +1,87 @@
+/* Import a cute font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Pacifico&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fce4ec; /* Soft pink background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+/* Styling for the Heading */
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 3rem;
+  color: #ff4081; /* A cute, soft pink */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Slight text shadow */
+  letter-spacing: 1px;
+  margin: 20px 0;
+}
+
+/* Styling for the buttons */
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  padding: 12px 30px;
+  border-radius: 30px; /* Rounded corners */
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* 'Yes' Button - Green */
+button.bg-green-500 {
+  background: linear-gradient(135deg, #a8e063, #56ab2f); /* Gradient green */
+  color: white;
+}
+
+button.bg-green-500:hover {
+  background: linear-gradient(
+    135deg,
+    #56ab2f,
+    #a8e063
+  ); /* Reverse gradient on hover */
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* 'No' Button - Red */
+button.bg-red-500 {
+  background: linear-gradient(135deg, #ff6f61, #f7797d); /* Gradient red */
+  color: white;
+}
+
+button.bg-red-500:hover {
+  background: linear-gradient(
+    135deg,
+    #f7797d,
+    #ff6f61
+  ); /* Reverse gradient on hover */
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Adjust button size depending on the "Yes" button font size */
+button[style] {
+  font-size: 1.2rem;
+  padding: 12px 30px;
+}
+
+/* Text styling for the entire page */
+.text-4xl {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff4081; /* Soft pink color */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Slight text shadow */
+}
+
+h2 {
+  color: #ff4081; /* Soft pink color */
+  font-family: "Pacifico", cursive;
+}
